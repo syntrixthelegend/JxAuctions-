@@ -1,0 +1,29 @@
+title: "&0Admin Removal"
+rows: 3
+item-slot: 13
+
+filler:
+  slot: ["0-26"]
+  material: "RED_STAINED_GLASS_PANE"
+  name: " "
+
+cancel-return:
+  slot: 11
+  material: "ORANGE_CONCRETE"
+  name: "&#FFAA00&lCANCEL & RETURN TO SELLER"
+  lore:
+    - " "
+    - " &fMoves item to seller's expired/cancelled list"
+
+delete-permanent:
+  slot: 15
+  material: "RED_CONCRETE"
+  name: "&#FF3333&lDELETE ITEM"
+  lore:
+    - " "
+    - " &fMoves item to deleted items viewer"
+
+back:
+  slot: 22
+  material: "BARRIER"
+  name: "&#AAAAAA&lBack"

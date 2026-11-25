@@ -1,0 +1,27 @@
+title: "&0Confirm Purchase"
+rows: 3
+item-slot: 13
+
+filler:
+  slot: ["0-26"]
+  material: "GRAY_STAINED_GLASS_PANE"
+  name: " "
+
+confirm:
+  slot: 11
+  material: "LIME_CONCRETE"
+  name: "&#33FF33&lCONFIRM PURCHASE"
+  lore:
+    - " "
+    - " &fPrice: &#AAFFFF%price%"
+    - " &fSeller: &#AAFFFF%seller%"
+    - " "
+    - "&#33FF33&lClick &#DDDDDD» &#AAFFFFBuy Item"
+
+cancel:
+  slot: 15
+  material: "RED_CONCRETE"
+  name: "&#FF3333&lCANCEL"
+  lore:
+    - " "
+    - " &7Return to Auction House"

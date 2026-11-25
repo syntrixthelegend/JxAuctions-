@@ -1,0 +1,94 @@
+title: "&0Category Selector"
+rows: 4
+
+filler:
+  slot: ["0-35"]
+  material: "LIGHT_BLUE_STAINED_GLASS_PANE"
+  name: " "
+
+all:
+  slot: 10
+  material: "NETHER_STAR"
+  category: "all"
+  name: "&#00DDFF&lAll Items"
+  lore:
+    - " "
+    - " &fView every active auction"
+    - " "
+    - "&#00DDFF&lClick &#DDDDDD» &#AAFFFFOpen Category"
+
+tools:
+  slot: 11
+  material: "DIAMOND_PICKAXE"
+  category: "tools"
+  name: "&#00DDFF&lTools"
+  lore:
+    - " "
+    - " &fPickaxes, axes, shovels & hoes"
+    - " "
+    - "&#00DDFF&lClick &#DDDDDD» &#AAFFFFOpen Category"
+
+weapons:
+  slot: 12
+  material: "DIAMOND_SWORD"
+  category: "weapons"
+  name: "&#00DDFF&lWeapons"
+  lore:
+    - " "
+    - " &fSwords, bows, tridents & shields"
+    - " "
+    - "&#00DDFF&lClick &#DDDDDD» &#AAFFFFOpen Category"
+
+armors:
+  slot: 13
+  material: "DIAMOND_CHESTPLATE"
+  category: "armors"
+  name: "&#00DDFF&lArmor"
+  lore:
+    - " "
+    - " &fHelmets, chestplates, leggings & boots"
+    - " "
+    - "&#00DDFF&lClick &#DDDDDD» &#AAFFFFOpen Category"
+
+minerals:
+  slot: 14
+  material: "DIAMOND"
+  category: "minerals"
+  name: "&#00DDFF&lMinerals"
+  lore:
+    - " "
+    - " &fOres, ingots & gems"
+    - " "
+    - "&#00DDFF&lClick &#DDDDDD» &#AAFFFFOpen Category"
+
+blocks:
+  slot: 15
+  material: "GRASS_BLOCK"
+  category: "blocks"
+  name: "&#00DDFF&lBlocks"
+  lore:
+    - " "
+    - " &fBuilding blocks & wood"
+    - " "
+    - "&#00DDFF&lClick &#DDDDDD» &#AAFFFFOpen Category"
+
+consumables:
+  slot: 16
+  material: "GOLDEN_APPLE"
+  category: "consumables"
+  name: "&#00DDFF&lConsumables"
+  lore:
+    - " "
+    - " &fPotions, food & golden apples"
+    - " "
+    - "&#00DDFF&lClick &#DDDDDD» &#AAFFFFOpen Category"
+
+back:
+  slot: 31
+  material: "BARRIER"
+  name: "&#FF3333&lBack"
+  lore:
+    - " &7Return to Auction House"
+  actions:
+    - "[MENU] main"
+    - "[SOUND] ui.button.click|1|1"

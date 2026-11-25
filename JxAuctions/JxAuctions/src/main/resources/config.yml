@@ -1,0 +1,110 @@
+prefix: "<gradient:#00BBFF:#00DDFF><b>JxAuctions</b></gradient> &7» "
+
+database:
+  # Supported types: h2, sqlite, mysql
+  type: "h2"
+  prefix: "jxauctions"
+  address: "127.0.0.1"
+  port: 3306
+  database: "minecraft"
+  username: "root"
+  password: ""
+  pool:
+    maximum-pool-size: 10
+    minimum-idle: 5
+    maximum-lifetime: 1800000
+    keepalive-time: 60000
+    connection-timeout: 5000
+
+language: "en_US"
+
+multi-server-support:
+  # Modes: disabled, sql, proxy, redis, rabbitmq
+  mode: "disabled"
+  channel-name: "primary"
+  sql-poll-interval-ticks: 40
+  redis:
+    address: "127.0.0.1"
+    port: 6379
+    username: ""
+    password: ""
+  rabbitmq:
+    address: "127.0.0.1"
+    port: 5672
+    vhost: "/"
+    username: "guest"
+    password: "guest"
+
+only-give-money-on-join: false
+delay-money-give-seconds: 3
+
+number-formatting:
+  # 0 = formatted (#,###.##), 1 = short (1.5K), 2 = raw
+  mode: 0
+  formatted: "#,###.##"
+  short: "en_US"
+
+# 1 = HH:MM:SS, 2 = short (20m), 3 = text (01h 25m 35s)
+timer-format: 1
+date-format: "yyyy/MM/dd HH:mm:ss"
+
+# In seconds (86400 = 24 hours, 604800 = 7 days)
+item-expire-time: 86400
+item-deletion-time: 604800
+deleted-purge-days: 30
+
+min-price: 10.0
+max-price: 1000000000000.0
+
+# Possible values: main, category, my-items, expired-items, history, deleted
+default-menu: "main"
+
+# Possible options: anvil, chat
+search-mode: "anvil"
+
+force-currency-selector: false
+enable-currency-selector: true
+confirm-listing: false
+default-sell-limit: 3
+
+gui-refresh-cooldown-milliseconds: 150
+
+content-limit-bytes:
+  item: 5000
+  shulker: 20000
+  bundle: 20000
+
+max-history-length: -1
+show-global-history: false
+separate-expired-items: false
+
+command-aliases:
+  auction:
+    - "jxah"
+    - "ah"
+    - "auctionhouse"
+    - "jxauction"
+    - "auction"
+    - "jxauctionhouse"
+  admin:
+    - "jxahadmin"
+    - "ahadmin"
+    - "auctionhouseadmin"
+    - "jxauctionadmin"
+    - "auctionadmin"
+    - "jxauctionhouseadmin"
+
+blacklist-items:
+  - material: "BEDROCK"
+  - material: "BARRIER"
+    custom-model-data: 100
+    name: "*Admin Item*"
+
+update-notifier:
+  enabled: true
+  on-join: true
+  url: ""
+
+enable-safety: true
+debug: false
+version: 16

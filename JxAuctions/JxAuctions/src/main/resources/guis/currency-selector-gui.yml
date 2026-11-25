@@ -1,0 +1,14 @@
+title: "&0Select Currency"
+rows: 3
+
+filler:
+  slot: ["0-26"]
+  material: "LIGHT_BLUE_STAINED_GLASS_PANE"
+  name: " "
+
+cancel:
+  slot: 22
+  material: "BARRIER"
+  name: "&#FF3333&lCancel"
+  actions:
+    - "[CLOSE]"

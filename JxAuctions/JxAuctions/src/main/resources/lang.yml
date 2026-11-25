@@ -1,0 +1,206 @@
+help:
+  - " "
+  - "<gradient:#00BBFF:#00DDFF><b>JxAuctions</b></gradient> <#00DDFF>Help"
+  - " <#00DDFF>➤ <white>/ah <#DDDDDD>| <#AAFFFF>Open auction menu"
+  - " <#00DDFF>➤ <white>/ah open <menu> <#DDDDDD>| <#AAFFFF>Open menu"
+  - " <#00DDFF>➤ <white>/ah view [player] <#DDDDDD>| <#AAFFFF>View auctions of a player"
+  - " <#00DDFF>➤ <white>/ah sell <price> [amount] [currency] <#DDDDDD>| <#AAFFFF>Sell item"
+  - " <#00DDFF>➤ <white>/ah search [text] <#DDDDDD>| <#AAFFFF>Search auction items"
+  - " <#00DDFF>➤ <white>/ah history <#DDDDDD>| <#AAFFFF>Check sell and buy history"
+  - " <#00DDFF>➤ <white>/ah deleted <#DDDDDD>| <#AAFFFF>Check deleted items"
+  - " <#00DDFF>➤ <#AAFFFF>/ahadmin <#DDDDDD>| <#00DDFF>Admin commands"
+  - " "
+
+admin-help:
+  - " "
+  - "<gradient:#00BBFF:#00DDFF><b>JxAuctions</b></gradient> <#00DDFF>Admin"
+  - " <#00DDFF>➤ <white>/ahadmin reload <#DDDDDD>| <#AAFFFF>Reload plugin"
+  - " <#00DDFF>➤ <white>/ahadmin forceopen <player> [menu] <#DDDDDD>| <#AAFFFF>Forcefully open menu"
+  - " <#00DDFF>➤ <white>/ahadmin history [player] <#DDDDDD>| <#AAFFFF>Open history GUI"
+  - " <#00DDFF>➤ <white>/ahadmin deleted [player] <#DDDDDD>| <#AAFFFF>Open deleted GUI"
+  - " <#00DDFF>➤ <white>/ahadmin logs [player] <#DDDDDD>| <#AAFFFF>Open log viewer"
+  - " <#00DDFF>➤ <white>/ahadmin limit <set|give|take|reset> <player> [amount] <#DDDDDD>| <#AAFFFF>Modify player limit"
+  - " <#00DDFF>➤ <white>/ahadmin convert <plugin> <#DDDDDD>| <#AAFFFF>Convert from another plugin"
+  - " "
+
+reload:
+  success: "&#33FF33Plugin successfully reloaded!"
+  failed: "&#FF3333Failed to reload the plugin! Check console for details."
+
+item-lore:
+  - "%lore%"
+  - " "
+  - "&#999999&m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"
+  - " &#999999» &#00DDFFPrice: &#AAFFFF%price%"
+  - " &#999999» &#00DDFFSeller: &#AAFFFF%seller%"
+  - " &#999999» &#00DDFFExpires: &#AAFFFF%expires%"
+  - "&#999999&m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"
+  - "&#00DDFF&lClick &#DDDDDD» &#AAFFFFPurchase Item"
+  - "%container%"
+
+item-lore-own:
+  - "%lore%"
+  - " "
+  - "&#999999&m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"
+  - " &#999999» &#00DDFFPrice: &#AAFFFF%price%"
+  - " &#999999» &#00DDFFExpires: &#AAFFFF%expires%"
+  - "&#999999&m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"
+  - "&#00DDFF&lClick &#DDDDDD» &#AAFFFFCancel Auction"
+  - "%container%"
+
+item-lore-expired:
+  - "%lore%"
+  - " "
+  - "&#999999&m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"
+  - " &#999999» &#00DDFFPrice: &#AAFFFF%price%"
+  - " &#999999» &#00DDFFDeletion: &#AAFFFF%deletion%"
+  - "&#999999&m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"
+  - "&#00DDFF&lClick &#DDDDDD» &#AAFFFFTake Back Item"
+  - "%container%"
+
+item-lore-staff:
+  - "%lore%"
+  - " "
+  - "&#999999&m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"
+  - " &#999999» &#00DDFFPrice: &#AAFFFF%price%"
+  - " &#999999» &#00DDFFSeller: &#AAFFFF%seller%"
+  - " &#999999» &#00DDFFExpires: &#AAFFFF%expires%"
+  - "&#999999&m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"
+  - "&#00DDFF&lClick &#DDDDDD» &#AAFFFFPurchase Item"
+  - "%container%"
+  - "&#00DDFF&lShift Click &#DDDDDD» &#AAFFFFOpen Removal Menu"
+
+history-item-lore:
+  - "%lore%"
+  - " "
+  - "&#999999&m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"
+  - " &#999999» &#00DDFFSeller: &#AAFFFF%seller%"
+  - " &#999999» &#00DDFFBuyer: &#AAFFFF%buyer%"
+  - " &#999999» &#00DDFFPrice: &#AAFFFF%price%"
+  - " &#999999» &#00DDFFSold Time: &#AAFFFF%time%"
+  - "&#999999&m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"
+  - "%container%"
+
+history-admin-item-lore:
+  - "%lore%"
+  - " "
+  - "&#999999&m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"
+  - " &#999999» &#00DDFFSeller: &#AAFFFF%seller%"
+  - " &#999999» &#00DDFFBuyer: &#AAFFFF%buyer%"
+  - " &#999999» &#00DDFFPrice: &#AAFFFF%price%"
+  - " &#999999» &#00DDFFSold Time: &#AAFFFF%time%"
+  - "&#999999&m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"
+  - "&#00DDFF&lClick &#DDDDDD» &#AAFFFFGet Item"
+  - "%container%"
+
+deleted-gui-item-lore:
+  - "%lore%"
+  - " "
+  - "&#999999&m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"
+  - " &#999999» &#00DDFFSeller: &#AAFFFF%seller%"
+  - " &#999999» &#00DDFFPrice: &#AAFFFF%price%"
+  - " &#999999» &#00DDFFDeleted At: &#AAFFFF%time%"
+  - "&#999999&m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"
+  - "%container%"
+
+deleted-gui-admin-item-lore:
+  - "%lore%"
+  - " "
+  - "&#999999&m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"
+  - " &#999999» &#00DDFFSeller: &#AAFFFF%seller%"
+  - " &#999999» &#00DDFFPrice: &#AAFFFF%price%"
+  - " &#999999» &#00DDFFDeleted At: &#AAFFFF%time%"
+  - "&#999999&m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"
+  - "&#00DDFF&lClick &#DDDDDD» &#AAFFFFGet Item"
+  - "%container%"
+
+container: "&#00DDFF&lRight Click &#DDDDDD» &#AAFFFFView Contents"
+
+time:
+  second: "s"
+  minute: "m"
+  hour: "h"
+  day: "d"
+
+sorting:
+  newest: "Newest to oldest"
+  oldest: "Oldest to newest"
+  cheapest: "Cheapest to priciest"
+  priciest: "Priciest to cheapest"
+
+currency:
+  no-currency: "All"
+
+sell:
+  limit-reached: "&#FF0000You have reached the auction limit! &7(%current%/%limit%)"
+  no-item: "&#FF0000Hold something in your hand to sell it!"
+  no-currency: "&#FF0000You must give a currency parameter!"
+  price-too-low: "&#FF0000The price you have set is below the minimum of &f%amount%&#FF0000!"
+  price-too-high: "&#FF0000The price you have set is above the maximum of &f%amount%&#FF0000!"
+  invalid-price: "&#FF0000The price you have set is not a valid number!"
+  success: "&#33FF33You have successfully put &f%amount%x %item% &#33FF33on the auction house for &f%price%&#33FF33!"
+  action-bar-broadcast: "&#00DDFF%player% &fhas started selling &#00DDFF%amount%x &fof &#00DDFF%item% &ffor &#00DDFF%price%&f! &#DDDDDD/ah"
+  chat-broadcast: ""
+
+buy:
+  not-enough-money: "&#FF0000You can't afford this item!"
+  own-item: "&#FF0000You cannot purchase your own item!"
+  item-not-found: "&#FF0000The item is not found! Somebody must have bought it or the seller cancelled it!"
+  inventory-full: "&#FF0000Your inventory is full!"
+  success: "&#33FF33You have purchased &f%amount%x %item% &#33FF33from the auction house for &f%price%&#33FF33!"
+  notify-seller: "&#00DDFF%player% &fhas purchased your &#00DDFF%amount%x &#00DDFF%item% &ffor &#00DDFF%price% &ffrom the auction house!"
+  notify-seller-tax: "&#00DDFF%player% &fhas purchased your &#00DDFF%amount%x &#00DDFF%item% &ffor &#00DDFF%price% &#DDDDDD(%tax-amount% &#DDDDDDafter taxes) &ffrom the auction house!"
+  action-bar-purchase: "&#00DDFF%player% &fhas purchased &#00DDFF%amount%x &fof &#00DDFF%item% &ffrom &#00DDFF%seller% &ffor &#00DDFF%price%&f! &#DDDDDD/ah"
+  chat-purchase: ""
+
+admin-action:
+  cancelled: "&#00DDFF%staff% &fhas cancelled your &#00DDFF%amount%x &#00DDFF%item% &fin the auction house at &#00DDFF%date%&f!"
+  removed: "&#00DDFF%staff% &fhas removed your &#00DDFF%amount%x &#00DDFF%item% &ffrom the auction house at &#00DDFF%date%&f!"
+  cancelled-info: "&#FF3333You have successfully cancelled the item in the auction house!"
+  removed-info: "&#FF3333You have successfully removed the item from the auction house!"
+  failed: "&#FF3333Failed to remove item from the auction house! Somebody might have bought it or cancelled it."
+  take-item: "&#33FF33The clicked item has been placed in your inventory!"
+
+my-items:
+  removed: "&#FF0000You have successfully removed the item from the auction house!"
+  expired: "&fYour &#00DDFF%amount%x &#00DDFF%item% &fhas expired at &#00DDFF%date%&f!"
+  deleted: "&fYour &#00DDFF%amount%x &#00DDFF%item% &fhas been deleted at &#00DDFF%date%&f!"
+  failed: "&#FF3333Failed to remove item from the auction house! Somebody might have bought it or cancelled it."
+
+limit-changed: "&#33FF33You have changed &f%player%'s &#33FF33limit to &f%amount%&#33FF33!"
+limit-bypass-icon: "∞"
+expired: "Expired"
+blacklisted: "&#FF0000This item is blacklisted and can't be sold in the auction house!"
+oversized: "&#FF0000This item is too large to be sold in the auction house!"
+converting: "&#33FF33Started converter, check the console for more information!"
+data-not-loaded: "&#FF0000Your data has not been loaded yet, please wait a moment before trying again!"
+data-not-loaded-other: "&#FF0000The data of &#BB0000%player% &#FF0000has not been loaded yet!"
+
+input:
+  sign:
+    - ""
+    - "-----------"
+    - "Write in the first"
+    - "line to search!"
+  anvil:
+    title: "&0Search Here"
+    item:
+      material: "PAPER"
+      glow: true
+      name: "&fSEARCH HERE"
+      lore:
+        - "&#00DDFF↑ searching for"
+  chat:
+    - "&#00DDFFWhat do you want to search for? &#DDDDDD(type &#00DDFFcancel &#DDDDDDto stop)"
+
+commands:
+  invalid-value: "&#FF0000Invalid parameter: &#BB0000%value%"
+  invalid-command: "&#FF0000Invalid command or subcommand!"
+  missing-argument: "&#FF0000Missing argument! You must specify a value for &#BB0000%value%&#FF0000."
+  no-permission: "&#FF0000You don't have permission to access this command!"
+  player-only: "&#FF0000You must be a player to use this command!"
+  invalid-player: "&#FF0000The player &#BB0000%player% &#FF0000can not be found!"
+
+update-notifier: "&#88CCFFThere is a new version of JxAuctions available! &#DDDDDD(&#FFFFFFcurrent: &#FF0000%current% &#DDDDDD| &#FFFFFFlatest: &#00FF00%latest%&#DDDDDD)"
+
+version: 15

@@ -1,0 +1,45 @@
+url: ""
+
+auction-start:
+  enabled: false
+  color: "#00DDFF"
+  title:
+    text: "New Auction"
+  fields:
+    "1":
+      inline: false
+      name: "Seller"
+      value: "%player%"
+    "2":
+      inline: false
+      name: "Item"
+      value: "%amount%x %item%"
+    "3":
+      inline: false
+      name: "Price"
+      value: "%price%"
+
+auction-buy:
+  enabled: false
+  color: "#00DDFF"
+  title:
+    text: "Item Purchased"
+  fields:
+    "1":
+      inline: true
+      name: "Buyer"
+      value: "%player%"
+    "2":
+      inline: true
+      name: "Seller"
+      value: "%seller%"
+    "3":
+      inline: false
+      name: "Item"
+      value: "%amount%x %item%"
+    "4":
+      inline: true
+      name: "Price"
+      value: "%price%"
+
+version: 1
