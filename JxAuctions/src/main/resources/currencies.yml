@@ -1,0 +1,252 @@
+placeholder-currencies:
+  Example-Currency:
+    register: false
+    uses-double: true
+    works-offline: false
+    tax: 0
+    settings:
+      raw-placeholder: "%vault_eco_balance_fixed%"
+      give-command: "eco give %player% %amount%"
+      take-command: "eco take %player% %amount%"
+    display:
+      raw: "Money"
+      gui: "&#FCD34D%price% &#94A3B8money"
+    item:
+      material: "EMERALD"
+      name: "&#34D399&lMoney"
+      lore:
+        - "&#94A3B8List your item using server money."
+        - " "
+        - "&#10B981▸ Click to choose this currency"
+
+currencies:
+  Experience:
+    register: false
+    tax: 0
+    display:
+      raw: "Experience"
+      gui: "&#FCD34D%price% &#94A3B8XP"
+    item:
+      material: "EXPERIENCE_BOTTLE"
+      name: "&#34D399&lExperience"
+      lore:
+        - "&#94A3B8Trade items for vanilla experience."
+        - " "
+        - "&#10B981▸ Click to choose this currency"
+
+  Vault:
+    register: true
+    tax: 0
+    display:
+      gui: "&#FCD34D%price% &#94A3B8coins"
+      raw: "Vault"
+    item:
+      material: "GOLD_INGOT"
+      name: "&#34D399&lVault Coins"
+      lore:
+        - "&#94A3B8Standard server economy balance."
+        - " "
+        - "&#10B981▸ Click to choose this currency"
+
+  PlayerPoints:
+    register: true
+    tax: 0
+    display:
+      raw: "PlayerPoints"
+      gui: "&#FCD34D%price% &#94A3B8points"
+    item:
+      material: "SUNFLOWER"
+      name: "&#34D399&lPlayerPoints"
+      lore:
+        - "&#94A3B8List using your PlayerPoints balance."
+        - " "
+        - "&#10B981▸ Click to choose this currency"
+
+  RoyaleEconomy:
+    register: true
+    tax: 0
+    display:
+      raw: "RoyaleEconomy"
+      gui: "&#FCD34D%price% &#94A3B8coins"
+    item:
+      material: "GOLD_NUGGET"
+      name: "&#34D399&lRoyaleEconomy"
+      lore:
+        - "&#94A3B8List using RoyaleEconomy coins."
+        - " "
+        - "&#10B981▸ Click to choose this currency"
+
+  KingdomsX:
+    register: true
+    tax: 0
+    display:
+      raw: "KingdomsX"
+      gui: "&#FCD34D%price% &#94A3B8nexus points"
+    item:
+      material: "BEACON"
+      name: "&#34D399&lKingdomsX"
+      lore:
+        - "&#94A3B8List using KingdomsX nexus points."
+        - " "
+        - "&#10B981▸ Click to choose this currency"
+
+  RivalHarvesterHoes:
+    register: true
+    tax: 0
+    display:
+      raw: "RivalHarvesterHoes"
+      gui: "&#FCD34D%price% &#94A3B8essence"
+    item:
+      material: "DIAMOND_HOE"
+      name: "&#34D399&lHarvester Essence"
+      lore:
+        - "&#94A3B8List using RivalHarvesterHoes essence."
+        - " "
+        - "&#10B981▸ Click to choose this currency"
+
+  SuperMobCoins:
+    register: true
+    tax: 0
+    display:
+      raw: "SuperMobCoins"
+      gui: "&#FCD34D%price% &#94A3B8mobcoins"
+    item:
+      material: "MAGMA_CREAM"
+      name: "&#34D399&lSuperMobCoins"
+      lore:
+        - "&#94A3B8List using SuperMobCoins."
+        - " "
+        - "&#10B981▸ Click to choose this currency"
+
+  TheOnly-MobCoins:
+    register: true
+    tax: 0
+    display:
+      raw: "TheOnly-MobCoins"
+      gui: "&#FCD34D%price% &#94A3B8mobcoins"
+    item:
+      material: "BLAZE_POWDER"
+      name: "&#34D399&lMobCoins"
+      lore:
+        - "&#94A3B8List using TheOnly-MobCoins."
+        - " "
+        - "&#10B981▸ Click to choose this currency"
+
+  TokenManager:
+    register: true
+    tax: 0
+    display:
+      raw: "TokenManager"
+      gui: "&#FCD34D%price% &#94A3B8tokens"
+    item:
+      material: "EMERALD"
+      name: "&#34D399&lTokenManager"
+      lore:
+        - "&#94A3B8List using TokenManager tokens."
+        - " "
+        - "&#10B981▸ Click to choose this currency"
+
+  BeastTokens:
+    register: true
+    tax: 0
+    display:
+      raw: "BeastTokens"
+      gui: "&#FCD34D%price% &#94A3B8tokens"
+    item:
+      material: "PRISMARINE_CRYSTALS"
+      name: "&#34D399&lBeastTokens"
+      lore:
+        - "&#94A3B8List using BeastTokens."
+        - " "
+        - "&#10B981▸ Click to choose this currency"
+
+  CoinsEngine:
+    register: true
+    coins:
+      tax: 0
+      display:
+        raw: "CoinsEngine-coins"
+        gui: "&#FCD34D%price% &#94A3B8coins"
+      item:
+        material: "GOLD_INGOT"
+        name: "&#34D399&lCoinsEngine Coins"
+        lore:
+          - "&#94A3B8List using CoinsEngine."
+          - " "
+          - "&#10B981▸ Click to choose this currency"
+
+  ExcellentEconomy:
+    register: true
+    coins:
+      tax: 0
+      display:
+        raw: "ExcellentEconomy-coins"
+        gui: "&#FCD34D%price% &#94A3B8coins"
+      item:
+        material: "GOLD_INGOT"
+        name: "&#34D399&lExcellentEconomy Coins"
+        lore:
+          - "&#94A3B8List using ExcellentEconomy."
+          - " "
+          - "&#10B981▸ Click to choose this currency"
+
+  EcoBits:
+    register: true
+    crystals:
+      tax: 0
+      display:
+        raw: "EcoBits-crystals"
+        gui: "&#FCD34D%price% &#94A3B8crystals"
+      item:
+        material: "AMETHYST_SHARD"
+        name: "&#34D399&lEcoBits Crystals"
+        lore:
+          - "&#94A3B8List using EcoBits crystals."
+          - " "
+          - "&#10B981▸ Click to choose this currency"
+
+  RedisEconomy:
+    register: true
+    coins:
+      tax: 0
+      display:
+        raw: "RedisEconomy-coins"
+        gui: "&#FCD34D%price% &#94A3B8coins"
+      item:
+        material: "GOLD_INGOT"
+        name: "&#34D399&lRedisEconomy Coins"
+        lore:
+          - "&#94A3B8List using RedisEconomy."
+          - " "
+          - "&#10B981▸ Click to choose this currency"
+
+  UltraEconomy:
+    register: true
+    coins:
+      tax: 0
+      display:
+        raw: "UltraEconomy-coins"
+        gui: "&#FCD34D%price% &#94A3B8coins"
+      item:
+        material: "GOLD_INGOT"
+        name: "&#34D399&lUltraEconomy Coins"
+        lore:
+          - "&#94A3B8List using UltraEconomy."
+          - " "
+          - "&#10B981▸ Click to choose this currency"
+
+  RivalCredits:
+    register: true
+    tax: 0
+    display:
+      raw: "RivalCredits"
+      gui: "&#FCD34D%price% &#94A3B8credits"
+    item:
+      material: "NETHER_STAR"
+      name: "&#34D399&lRivalCredits"
+      lore:
+        - "&#94A3B8List using RivalCredits."
+        - " "
+        - "&#10B981▸ Click to choose this currency"
+
+version: 8

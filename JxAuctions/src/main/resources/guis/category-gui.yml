@@ -1,0 +1,87 @@
+title: "&8Choose a Category"
+rows: 4
+
+filler:
+  slot: ["0-35"]
+  material: "GRAY_STAINED_GLASS_PANE"
+  name: " "
+
+all:
+  slot: 10
+  material: "NETHER_STAR"
+  category: "all"
+  name: "&#34D399&lAll Listings"
+  lore:
+    - "&#94A3B8Browse every item currently on sale."
+    - " "
+    - "&#10B981▸ Left-Click: &fView All"
+
+tools:
+  slot: 11
+  material: "DIAMOND_PICKAXE"
+  category: "tools"
+  name: "&#34D399&lTools"
+  lore:
+    - "&#94A3B8Pickaxes, axes, shovels, and hoes."
+    - " "
+    - "&#10B981▸ Left-Click: &fFilter Tools"
+
+weapons:
+  slot: 12
+  material: "DIAMOND_SWORD"
+  category: "weapons"
+  name: "&#34D399&lWeapons"
+  lore:
+    - "&#94A3B8Swords, bows, tridents, and shields."
+    - " "
+    - "&#10B981▸ Left-Click: &fFilter Weapons"
+
+armors:
+  slot: 13
+  material: "DIAMOND_CHESTPLATE"
+  category: "armors"
+  name: "&#34D399&lArmor"
+  lore:
+    - "&#94A3B8Helmets, chestplates, leggings, and boots."
+    - " "
+    - "&#10B981▸ Left-Click: &fFilter Armor"
+
+minerals:
+  slot: 14
+  material: "DIAMOND"
+  category: "minerals"
+  name: "&#34D399&lMinerals &amp; Ores"
+  lore:
+    - "&#94A3B8Ores, ingots, gems, and ancient debris."
+    - " "
+    - "&#10B981▸ Left-Click: &fFilter Minerals"
+
+blocks:
+  slot: 15
+  material: "GRASS_BLOCK"
+  category: "blocks"
+  name: "&#34D399&lBuilding Blocks"
+  lore:
+    - "&#94A3B8Stone, wood, planks, and decorative blocks."
+    - " "
+    - "&#10B981▸ Left-Click: &fFilter Blocks"
+
+consumables:
+  slot: 16
+  material: "GOLDEN_APPLE"
+  category: "consumables"
+  name: "&#34D399&lFood &amp; Potions"
+  lore:
+    - "&#94A3B8Golden apples, potions, and cooked food."
+    - " "
+    - "&#10B981▸ Left-Click: &fFilter Consumables"
+
+back:
+  slot: 31
+  material: "ARROW"
+  name: "&#F87171&l← Back to Market"
+  lore:
+    - "&#94A3B8Return to the main Auction House."
+  actions:
+    - "[MENU] main"
+    - "[SOUND] ui.button.click|1|1"

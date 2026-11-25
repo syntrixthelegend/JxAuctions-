@@ -1,0 +1,205 @@
+title: "&8Auction House &7(%current_page%/%max_page%)"
+rows: 6
+page-size: 36
+auto-update-ticks: -1
+
+filler:
+  slot: ["0-8", "45-53"]
+  material: "GRAY_STAINED_GLASS_PANE"
+  name: " "
+
+category-menu:
+  slot: 0
+  material: "CHEST_MINECART"
+  conditions:
+    - "%categories_enabled% == true"
+  name: "&#34D399&lBrowse Categories"
+  lore:
+    - "&#94A3B8Open the category grid to filter"
+    - "&#94A3B8tools, armor, blocks, and more."
+    - " "
+    - "&#10B981▸ Left-Click: &fOpen Categories"
+  actions:
+    - "[MENU] category"
+    - "[SOUND] ui.button.click|1|1"
+
+category-switch:
+  slot: 8
+  material: "COMPASS"
+  conditions:
+    - "%categories_enabled% == true"
+  name: "&#34D399&lQuick Category"
+  lore:
+    - "&#94A3B8Active Filter: &#FCD34D%selected_category%"
+    - " "
+    - "&#10B981▸ Left-Click: &fNext Category"
+    - "&#F59E0B▸ Shift-Click: &fReset to All"
+  actions:
+    - "[CATEGORY]"
+    - "[SOUND] ui.button.click|1|1"
+
+statistics:
+  slot: 4
+  material: "WRITABLE_BOOK"
+  name: "&#34D399&lMarket &amp; Your Stats"
+  lore:
+    - "&#CBD5E1Active Market:"
+    - " &#94A3B8• Total Listings: &f%total_active_count%"
+    - " &#94A3B8• Your Listings: &f%sell_count%/%sell_limit%"
+    - " "
+    - "&#CBD5E1Your Lifetime Activity:"
+    - " &#94A3B8• Items Sold: &#34D399%items_sold% &7(&#FCD34D%money_made%&7)"
+    - " &#94A3B8• Items Bought: &#38BDF8%items_purchased% &7(&#FCD34D%money_spent%&7)"
+    - " "
+    - "&#10B981Tip: &fHold an item and run &#FCD34D/ah sell <price>"
+
+my-items:
+  slot: 45
+  material: "ENDER_CHEST"
+  name: "&#34D399&lMy Listings"
+  lore:
+    - "&#94A3B8Manage your active listings and"
+    - "&#94A3B8claim expired items."
+    - " "
+    - "&#10B981▸ Left-Click: &fOpen My Listings"
+  actions:
+    - "[MENU] my-items"
+    - "[SOUND] ui.button.click|1|1"
+
+sorting-newest:
+  slot: 46
+  material: "CLOCK"
+  conditions:
+    - "%selected_sorting_raw% == newest"
+  name: "&#34D399&lSort Order"
+  lore:
+    - " &#10B981● &fNewest First"
+    - " &#64748B○ Oldest First"
+    - " &#64748B○ Lowest Price"
+    - " &#64748B○ Highest Price"
+    - " "
+    - "&#10B981▸ Left-Click: &fSwitch Sort"
+    - "&#F59E0B▸ Shift-Click: &fReset Sort"
+  actions:
+    - "[SORTING] oldest|priciest"
+    - "[SOUND] ui.button.click|1|1"
+
+sorting-oldest:
+  slot: 46
+  material: "CLOCK"
+  conditions:
+    - "%selected_sorting_raw% == oldest"
+  name: "&#34D399&lSort Order"
+  lore:
+    - " &#64748B○ Newest First"
+    - " &#10B981● &fOldest First"
+    - " &#64748B○ Lowest Price"
+    - " &#64748B○ Highest Price"
+    - " "
+    - "&#10B981▸ Left-Click: &fSwitch Sort"
+    - "&#F59E0B▸ Shift-Click: &fReset Sort"
+  actions:
+    - "[SORTING] cheapest|newest"
+    - "[SOUND] ui.button.click|1|1"
+
+sorting-cheapest:
+  slot: 46
+  material: "EMERALD"
+  conditions:
+    - "%selected_sorting_raw% == cheapest"
+  name: "&#34D399&lSort Order"
+  lore:
+    - " &#64748B○ Newest First"
+    - " &#64748B○ Oldest First"
+    - " &#10B981● &fLowest Price"
+    - " &#64748B○ Highest Price"
+    - " "
+    - "&#10B981▸ Left-Click: &fSwitch Sort"
+    - "&#F59E0B▸ Shift-Click: &fReset Sort"
+  actions:
+    - "[SORTING] priciest|oldest"
+    - "[SOUND] ui.button.click|1|1"
+
+sorting-priciest:
+  slot: 46
+  material: "GOLD_INGOT"
+  conditions:
+    - "%selected_sorting_raw% == priciest"
+  name: "&#34D399&lSort Order"
+  lore:
+    - " &#64748B○ Newest First"
+    - " &#64748B○ Oldest First"
+    - " &#64748B○ Lowest Price"
+    - " &#10B981● &fHighest Price"
+    - " "
+    - "&#10B981▸ Left-Click: &fSwitch Sort"
+    - "&#F59E0B▸ Shift-Click: &fReset Sort"
+  actions:
+    - "[SORTING] newest|cheapest"
+    - "[SOUND] ui.button.click|1|1"
+
+previous-page:
+  slot: 48
+  material: "ARROW"
+  conditions:
+    - "%current_page% > 1"
+  name: "&#34D399&l← Previous Page"
+  lore:
+    - "&#94A3B8Go back to page %current_page%."
+    - " "
+    - "&#10B981▸ Left-Click: &fPrevious Page"
+  actions:
+    - "[PAGE] previous"
+    - "[SOUND] ui.button.click|1|1"
+
+refresh:
+  slot: 49
+  material: "SUNFLOWER"
+  name: "&#FCD34D&lRefresh Market"
+  lore:
+    - "&#94A3B8Reload active listings now."
+    - " "
+    - "&#10B981▸ Left-Click: &fRefresh"
+  actions:
+    - "[REFRESH]"
+    - "[SOUND] ui.button.click|1|1"
+
+next-page:
+  slot: 50
+  material: "ARROW"
+  conditions:
+    - "%current_page% < %max_page%"
+  name: "&#34D399&lNext Page →"
+  lore:
+    - "&#94A3B8Browse more listings."
+    - " "
+    - "&#10B981▸ Left-Click: &fNext Page"
+  actions:
+    - "[PAGE] next"
+    - "[SOUND] ui.button.click|1|1"
+
+currency:
+  slot: 52
+  material: "HOPPER"
+  name: "&#34D399&lCurrency Filter"
+  lore:
+    - "&#94A3B8Showing: &#FCD34D%selected_currency%"
+    - " "
+    - "&#10B981▸ Left-Click: &fCycle Currency"
+    - "&#F59E0B▸ Shift-Click: &fShow All"
+  actions:
+    - "[CURRENCY]"
+    - "[SOUND] ui.button.click|1|1"
+
+search:
+  slot: 53
+  material: "SPYGLASS"
+  name: "&#34D399&lSearch Listings"
+  lore:
+    - "&#94A3B8Query: &#FCD34D%search%"
+    - " "
+    - "&#10B981▸ Left-Click: &fEnter Search"
+    - "&#F59E0B▸ Shift-Click: &fClear Search"
+  actions:
+    - "[SEARCH]"
+    - "[SOUND] ui.button.click|1|1"

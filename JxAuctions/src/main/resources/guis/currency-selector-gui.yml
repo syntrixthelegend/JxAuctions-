@@ -1,0 +1,16 @@
+title: "&8Choose Currency"
+rows: 3
+
+filler:
+  slot: ["0-26"]
+  material: "GRAY_STAINED_GLASS_PANE"
+  name: " "
+
+cancel:
+  slot: 22
+  material: "BARRIER"
+  name: "&#F87171&lCancel"
+  lore:
+    - "&#94A3B8Abort listing this item."
+  actions:
+    - "[CLOSE]"

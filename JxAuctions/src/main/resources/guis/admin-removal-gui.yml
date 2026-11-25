@@ -1,0 +1,33 @@
+title: "&8Moderate Listing"
+rows: 3
+item-slot: 13
+
+filler:
+  slot: ["0-26"]
+  material: "BLACK_STAINED_GLASS_PANE"
+  name: " "
+
+cancel-return:
+  slot: 11
+  material: "ORANGE_WOOL"
+  name: "&#F59E0B&lCancel &amp; Return"
+  lore:
+    - "&#94A3B8Removes the listing and sends it"
+    - "&#94A3B8to the seller's Expired Items."
+    - " "
+    - "&#F59E0B▸ Left-Click: &fReturn to Seller"
+
+delete-permanent:
+  slot: 15
+  material: "RED_WOOL"
+  name: "&#EF4444&lDelete Listing"
+  lore:
+    - "&#94A3B8Removes the listing and archives"
+    - "&#94A3B8it in the Deleted Items log."
+    - " "
+    - "&#EF4444▸ Left-Click: &fDelete Listing"
+
+back:
+  slot: 22
+  material: "ARROW"
+  name: "&#94A3B8&l← Back"

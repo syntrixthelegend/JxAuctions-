@@ -1,0 +1,104 @@
+name: JxAuctions
+version: '2.0.0'
+main: dev.jxauctions.JxAuctions
+api-version: '1.18'
+folia-supported: true
+authors: [JxAuctions]
+description: A free, lightweight, open-source Auction House plugin for Spigot, Paper, Purpur, and Folia.
+libraries:
+  - com.zaxxer:HikariCP:5.1.0
+  - com.h2database:h2:2.2.224
+  - org.xerial:sqlite-jdbc:3.45.1.0
+  - com.mysql:mysql-connector-j:8.3.0
+  - redis.clients:jedis:5.1.2
+  - com.rabbitmq:amqp-client:5.21.0
+softdepend:
+  - Vault
+  - PlaceholderAPI
+  - floodgate
+  - PlayerPoints
+  - CoinsEngine
+  - ExcellentEconomy
+  - EcoBits
+  - RedisEconomy
+  - UltraEconomy
+  - TokenManager
+  - RoyaleEconomy
+  - SuperMobCoins
+  - BeastTokens
+  - RivalCredits
+  - Kingdoms
+  - TheOnly-MobCoins
+  - RivalHarvesterHoes
+
+commands:
+  ah:
+    description: Main JxAuctions player command
+    usage: /ah [open|sell|search|view|history|deleted]
+    aliases: [jxah, auctionhouse, jxauction, auction, jxauctionhouse]
+  ahadmin:
+    description: JxAuctions admin management command
+    usage: /ahadmin <reload|forceopen|history|deleted|logs|limit|convert>
+    aliases: [jxahadmin, auctionhouseadmin, jxauctionadmin, auctionadmin, jxauctionhouseadmin]
+
+permissions:
+  jxauctions.use:
+    description: Ability to use player commands
+    default: true
+  jxauctions.open:
+    description: Open the auction house menu
+    default: true
+  jxauctions.sell:
+    description: Sell items in the auction house
+    default: true
+  jxauctions.search:
+    description: Search items in the auction house
+    default: true
+  jxauctions.view:
+    description: View a player's active auctions
+    default: true
+  jxauctions.history:
+    description: Open the auction history viewer
+    default: true
+  jxauctions.deleted:
+    description: Open the deleted items viewer
+    default: true
+  jxauctions.limit.bypass:
+    description: Bypass the auction listing limit
+    default: op
+  jxauctions.admin:
+    description: Access all admin commands and actions
+    default: op
+  jxauctions.admin.removal:
+    description: Remove or cancel any item from the auction house
+    default: op
+  jxauctions.reload:
+    description: Reload JxAuctions configuration files
+    default: op
+  jxauctions.forceopen:
+    description: Force open a menu for another player
+    default: op
+  jxauctions.history.admin:
+    description: View any player's or global auction history
+    default: op
+  jxauctions.history.admin.take:
+    description: Take items out of the history viewer
+    default: op
+  jxauctions.deleted.admin:
+    description: View any player's or global deleted items
+    default: op
+  jxauctions.deleted.admin.take:
+    description: Take items out of the deleted item viewer
+    default: op
+  jxauctions.logs.admin:
+    description: Open the admin log viewer
+    default: op
+  jxauctions.limit:
+    description: Modify player auction limits
+    default: op
+  jxauctions.convert:
+    description: Convert data from another auction plugin
+    default: op
+  jxauctions.update-notify:
+    description: Receive update notifications on join
+    default: op

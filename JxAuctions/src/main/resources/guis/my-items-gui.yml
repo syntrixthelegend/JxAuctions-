@@ -1,0 +1,67 @@
+title: "&8My Listings &7(%current_page%/%max_page%)"
+rows: 6
+page-size: 36
+
+filler:
+  slot: ["0-8", "45-53"]
+  material: "GRAY_STAINED_GLASS_PANE"
+  name: " "
+
+back:
+  slot: 45
+  material: "ARROW"
+  name: "&#F87171&l← Back to Market"
+  lore:
+    - "&#94A3B8Return to the main Auction House."
+  actions:
+    - "[MENU] main"
+    - "[SOUND] ui.button.click|1|1"
+
+previous-page:
+  slot: 48
+  material: "ARROW"
+  conditions:
+    - "%current_page% > 1"
+  name: "&#34D399&l← Previous Page"
+  lore:
+    - "&#10B981▸ Left-Click: &fPrevious Page"
+  actions:
+    - "[PAGE] previous"
+    - "[SOUND] ui.button.click|1|1"
+
+refresh:
+  slot: 49
+  material: "SUNFLOWER"
+  name: "&#FCD34D&lRefresh"
+  lore:
+    - "&#10B981▸ Left-Click: &fReload your listings"
+  actions:
+    - "[REFRESH]"
+    - "[SOUND] ui.button.click|1|1"
+
+next-page:
+  slot: 50
+  material: "ARROW"
+  conditions:
+    - "%current_page% < %max_page%"
+  name: "&#34D399&lNext Page →"
+  lore:
+    - "&#10B981▸ Left-Click: &fNext Page"
+  actions:
+    - "[PAGE] next"
+    - "[SOUND] ui.button.click|1|1"
+
+expired-items:
+  slot: 53
+  material: "CHEST"
+  conditions:
+    - "%expired_items_enabled% == true"
+  name: "&#F59E0B&lExpired Items &7(%expired_count%)"
+  lore:
+    - "&#94A3B8Claim items whose listing timer"
+    - "&#94A3B8has run out before they are cleared."
+    - " "
+    - "&#F59E0B▸ Left-Click: &fOpen Expired Items"
+  actions:
+    - "[MENU] expired-items"
+    - "[SOUND] ui.button.click|1|1"

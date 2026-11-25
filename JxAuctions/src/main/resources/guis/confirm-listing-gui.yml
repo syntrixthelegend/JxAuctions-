@@ -1,0 +1,25 @@
+title: "&8Confirm Listing"
+rows: 3
+item-slot: 13
+
+filler:
+  slot: ["0-26"]
+  material: "GRAY_STAINED_GLASS_PANE"
+  name: " "
+
+confirm:
+  slot: 11
+  material: "LIME_WOOL"
+  name: "&#34D399&lConfirm Listing"
+  lore:
+    - "&#94A3B8Price: &#FCD34D%price%"
+    - "&#94A3B8Market Tax: &#CBD5E1%tax%%"
+    - " "
+    - "&#10B981▸ Left-Click: &fPost Listing"
+
+cancel:
+  slot: 15
+  material: "RED_WOOL"
+  name: "&#F87171&lCancel"
+  lore:
+    - "&#94A3B8Keep the item in your inventory."

@@ -1,0 +1,14 @@
+title: "&8Container Preview"
+rows: 4
+
+filler:
+  slot: ["27-35"]
+  material: "GRAY_STAINED_GLASS_PANE"
+  name: " "
+
+back:
+  slot: 31
+  material: "ARROW"
+  name: "&#F87171&l← Back"
+  lore:
+    - "&#94A3B8Return to the previous menu."

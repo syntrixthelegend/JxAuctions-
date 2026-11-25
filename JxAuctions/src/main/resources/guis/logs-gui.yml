@@ -1,0 +1,40 @@
+title: "&8Admin Audit Logs &7(%current_page%/%max_page%)"
+rows: 6
+page-size: 36
+
+filler:
+  slot: ["0-8", "45-53"]
+  material: "BLACK_STAINED_GLASS_PANE"
+  name: " "
+
+back:
+  slot: 45
+  material: "BARRIER"
+  name: "&#F87171&lClose Logs"
+  actions:
+    - "[CLOSE]"
+
+previous-page:
+  slot: 48
+  material: "ARROW"
+  conditions:
+    - "%current_page% > 1"
+  name: "&#34D399&l← Previous Page"
+  actions:
+    - "[PAGE] previous"
+
+refresh:
+  slot: 49
+  material: "SUNFLOWER"
+  name: "&#FCD34D&lRefresh"
+  actions:
+    - "[REFRESH]"
+
+next-page:
+  slot: 50
+  material: "ARROW"
+  conditions:
+    - "%current_page% < %max_page%"
+  name: "&#34D399&lNext Page →"
+  actions:
+    - "[PAGE] next"

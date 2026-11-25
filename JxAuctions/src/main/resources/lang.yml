@@ -1,0 +1,206 @@
+help:
+  - " "
+  - "<gradient:#10B981:#34D399><b>JxAuctions</b></gradient> &#94A3B8• Player Commands"
+  - " &#10B981▸ &f/ah &#64748B- &#CBD5E1Open the Auction House"
+  - " &#10B981▸ &f/ah open <menu> &#64748B- &#CBD5E1Jump straight to a menu"
+  - " &#10B981▸ &f/ah view [player] &#64748B- &#CBD5E1Browse a player's active listings"
+  - " &#10B981▸ &f/ah sell <price> [amount] [currency] &#64748B- &#CBD5E1List held item"
+  - " &#10B981▸ &f/ah search [text] &#64748B- &#CBD5E1Search listings by name or seller"
+  - " &#10B981▸ &f/ah history &#64748B- &#CBD5E1View your past sales and purchases"
+  - " &#10B981▸ &f/ah deleted &#64748B- &#CBD5E1View expired items that were cleared"
+  - " &#10B981▸ &#94A3B8/ahadmin &#64748B- &#CBD5E1Staff management commands"
+  - " "
+
+admin-help:
+  - " "
+  - "<gradient:#10B981:#34D399><b>JxAuctions</b></gradient> &#94A3B8• Admin Commands"
+  - " &#10B981▸ &f/ahadmin reload &#64748B- &#CBD5E1Reload configs and GUIs"
+  - " &#10B981▸ &f/ahadmin forceopen <player> [menu] &#64748B- &#CBD5E1Open a menu for a player"
+  - " &#10B981▸ &f/ahadmin history [player] &#64748B- &#CBD5E1Inspect auction history"
+  - " &#10B981▸ &f/ahadmin deleted [player] &#64748B- &#CBD5E1Inspect deleted items"
+  - " &#10B981▸ &f/ahadmin logs [player] &#64748B- &#CBD5E1Open the audit log viewer"
+  - " &#10B981▸ &f/ahadmin limit <set|give|take|reset> <player> [amount] &#64748B- &#CBD5E1Adjust listing limit"
+  - " &#10B981▸ &f/ahadmin convert <plugin> &#64748B- &#CBD5E1Import data from another plugin"
+  - " "
+
+reload:
+  success: "&#34D399JxAuctions configuration and menus reloaded!"
+  failed: "&#EF4444Reload failed. Check the server console for details."
+
+item-lore:
+  - "%lore%"
+  - " "
+  - "&#334155&m------------------------"
+  - " &#94A3B8Price: &#FCD34D%price%"
+  - " &#94A3B8Seller: &f%seller%"
+  - " &#94A3B8Expires in: &#CBD5E1%expires%"
+  - "&#334155&m------------------------"
+  - "&#10B981▸ Left-Click: &fPurchase item"
+  - "%container%"
+
+item-lore-own:
+  - "%lore%"
+  - " "
+  - "&#334155&m------------------------"
+  - " &#94A3B8Price: &#FCD34D%price%"
+  - " &#94A3B8Expires in: &#CBD5E1%expires%"
+  - "&#334155&m------------------------"
+  - "&#F59E0B▸ Left-Click: &fCancel &amp; reclaim item"
+  - "%container%"
+
+item-lore-expired:
+  - "%lore%"
+  - " "
+  - "&#334155&m------------------------"
+  - " &#94A3B8Listed Price: &#FCD34D%price%"
+  - " &#94A3B8Clears in: &#F87171%deletion%"
+  - "&#334155&m------------------------"
+  - "&#10B981▸ Left-Click: &fReturn to inventory"
+  - "%container%"
+
+item-lore-staff:
+  - "%lore%"
+  - " "
+  - "&#334155&m------------------------"
+  - " &#94A3B8Price: &#FCD34D%price%"
+  - " &#94A3B8Seller: &f%seller%"
+  - " &#94A3B8Expires in: &#CBD5E1%expires%"
+  - "&#334155&m------------------------"
+  - "&#10B981▸ Left-Click: &fPurchase item"
+  - "%container%"
+  - "&#F87171▸ Shift-Click: &fModerate / Remove"
+
+history-item-lore:
+  - "%lore%"
+  - " "
+  - "&#334155&m------------------------"
+  - " &#94A3B8Seller: &f%seller%"
+  - " &#94A3B8Buyer: &f%buyer%"
+  - " &#94A3B8Price: &#FCD34D%price%"
+  - " &#94A3B8Sold: &#CBD5E1%time%"
+  - "&#334155&m------------------------"
+  - "%container%"
+
+history-admin-item-lore:
+  - "%lore%"
+  - " "
+  - "&#334155&m------------------------"
+  - " &#94A3B8Seller: &f%seller%"
+  - " &#94A3B8Buyer: &f%buyer%"
+  - " &#94A3B8Price: &#FCD34D%price%"
+  - " &#94A3B8Sold: &#CBD5E1%time%"
+  - "&#334155&m------------------------"
+  - "&#10B981▸ Left-Click: &fRecover a copy"
+  - "%container%"
+
+deleted-gui-item-lore:
+  - "%lore%"
+  - " "
+  - "&#334155&m------------------------"
+  - " &#94A3B8Seller: &f%seller%"
+  - " &#94A3B8Price: &#FCD34D%price%"
+  - " &#94A3B8Cleared: &#CBD5E1%time%"
+  - "&#334155&m------------------------"
+  - "%container%"
+
+deleted-gui-admin-item-lore:
+  - "%lore%"
+  - " "
+  - "&#334155&m------------------------"
+  - " &#94A3B8Seller: &f%seller%"
+  - " &#94A3B8Price: &#FCD34D%price%"
+  - " &#94A3B8Cleared: &#CBD5E1%time%"
+  - "&#334155&m------------------------"
+  - "&#10B981▸ Left-Click: &fRecover item"
+  - "%container%"
+
+container: "&#38BDF8▸ Right-Click: &fPreview contents"
+
+time:
+  second: "s"
+  minute: "m"
+  hour: "h"
+  day: "d"
+
+sorting:
+  newest: "Newest First"
+  oldest: "Oldest First"
+  cheapest: "Lowest Price"
+  priciest: "Highest Price"
+
+currency:
+  no-currency: "All Currencies"
+
+sell:
+  limit-reached: "&#EF4444You've reached your active listing limit &#94A3B8(%current%/%limit%)&#EF4444."
+  no-item: "&#EF4444Hold the item you want to sell in your main hand."
+  no-currency: "&#EF4444Please specify a currency name."
+  price-too-low: "&#EF4444Price must be at least &f%amount%&#EF4444."
+  price-too-high: "&#EF4444Price cannot exceed &f%amount%&#EF4444."
+  invalid-price: "&#EF4444Please enter a valid price (e.g. 500 or 2.5k)."
+  success: "&#34D399Listed &f%amount%x %item% &#34D399on the Auction House for &#FCD34D%price%&#34D399!"
+  action-bar-broadcast: "&#34D399%player% &flisted &#34D399%amount%x %item% &ffor &#FCD34D%price% &#64748B(/ah)"
+  chat-broadcast: ""
+
+buy:
+  not-enough-money: "&#EF4444You don't have enough funds for this item."
+  own-item: "&#EF4444You can't buy your own listing—click it in My Listings to cancel."
+  item-not-found: "&#EF4444This listing is no longer available."
+  inventory-full: "&#EF4444Make some space in your inventory before purchasing."
+  success: "&#34D399Purchased &f%amount%x %item% &#34D399for &#FCD34D%price%&#34D399!"
+  notify-seller: "&#34D399%player% &fbought your &#34D399%amount%x %item% &ffor &#FCD34D%price%&f!"
+  notify-seller-tax: "&#34D399%player% &fbought your &#34D399%amount%x %item% &ffor &#FCD34D%price% &#94A3B8(%tax-amount% after tax)&f!"
+  action-bar-purchase: "&#34D399%player% &fbought &#34D399%amount%x %item% &ffrom &#34D399%seller% &ffor &#FCD34D%price% &#64748B(/ah)"
+  chat-purchase: ""
+
+admin-action:
+  cancelled: "&#F59E0B%staff% &freturned your &#34D399%amount%x %item% &fto Expired Items &#94A3B8(%date%)&f."
+  removed: "&#EF4444%staff% &fremoved your &#34D399%amount%x %item% &ffrom the Auction House &#94A3B8(%date%)&f."
+  cancelled-info: "&#34D399Listing cancelled and returned to the seller's Expired Items."
+  removed-info: "&#34D399Listing removed and archived in Deleted Items."
+  failed: "&#EF4444Could not remove listing—it may have already been bought or cancelled."
+  take-item: "&#34D399Item added to your inventory."
+
+my-items:
+  removed: "&#34D399Listing cancelled and returned to your inventory."
+  expired: "&#F59E0BYour listing for &f%amount%x %item% &#F59E0Bexpired &#94A3B8(%date%)&#F59E0B. Claim it in /ah!"
+  deleted: "&#EF4444Your unclaimed listing &f%amount%x %item% &#EF4444was cleared &#94A3B8(%date%)&#EF4444."
+  failed: "&#EF4444Could not cancel listing—it may have already been bought."
+
+limit-changed: "&#34D399Updated &f%player%'s &#34D399auction limit to &f%amount%&#34D399."
+limit-bypass-icon: "∞"
+expired: "Expired"
+blacklisted: "&#EF4444This item is blacklisted and cannot be listed."
+oversized: "&#EF4444This item contains too much data to be listed."
+converting: "&#34D399Migration started—check the console for progress."
+data-not-loaded: "&#EF4444Your auction data is still loading, please try again in a second."
+data-not-loaded-other: "&#EF4444%player%'s data is still loading."
+
+input:
+  sign:
+    - ""
+    - "^^^^^^^^^^^^^^^"
+    - "Type search term"
+    - "on the first line"
+  anvil:
+    title: "&8Search Listings"
+    item:
+      material: "NAME_TAG"
+      glow: true
+      name: "&fType your search..."
+      lore:
+        - "&#94A3B8Enter an item name, enchant, or seller"
+  chat:
+    - "&#34D399Type what you're looking for in chat &#94A3B8(or type &#F87171cancel &#94A3B8to abort):"
+
+commands:
+  invalid-value: "&#EF4444Invalid value: &f%value%"
+  invalid-command: "&#EF4444Unknown subcommand. Use /ah for help."
+  missing-argument: "&#EF4444Missing required argument: &f%value%"
+  no-permission: "&#EF4444You don't have permission to use that."
+  player-only: "&#EF4444Only in-game players can run this command."
+  invalid-player: "&#EF4444Player &f%player% &#EF4444was not found."
+
+update-notifier: "&#34D399A new JxAuctions update is available! &#94A3B8(Current: &f%current% &#94A3B8| Latest: &#34D399%latest%&#94A3B8)"
+
+version: 15
